@@ -1,0 +1,160 @@
+/* Same palette and mark as the extension itself (see icons/, src/popup/). */
+:root {
+  --void: oklch(0.18 0.015 265);
+  --paper: oklch(0.985 0.004 80);
+  --paper-dim: oklch(0.94 0.006 80);
+  --ink: oklch(0.22 0.01 265);
+  --ink-muted: oklch(0.5 0.02 265);
+  --accent: oklch(0.7 0.19 35);
+  --border: oklch(0.9 0.006 80);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, "Segoe UI", system-ui, ui-sans-serif, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: oklch(0.6 0.19 35);
+}
+
+header.site-header {
+  background: var(--void);
+  padding: 20px 24px;
+}
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 760px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.brand-lockup h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--paper);
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.hero h2 {
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.hero .lede {
+  font-size: 18px;
+  color: var(--ink-muted);
+  max-width: 46ch;
+  margin: 0 0 28px;
+}
+
+.cta-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.button.primary {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+.button.secondary {
+  background: var(--paper-dim);
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+.features {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.feature h3 {
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+.feature p {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+@media (max-width: 620px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+.policy h2 {
+  font-size: 26px;
+  margin: 0 0 4px;
+}
+
+.policy .updated {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin: 0 0 32px;
+}
+
+.policy h3 {
+  font-size: 17px;
+  margin: 32px 0 8px;
+}
+
+.policy p,
+.policy li {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.policy ul {
+  padding-left: 20px;
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+footer.site-footer a {
+  color: var(--ink-muted);
+  margin: 0 8px;
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Advoid</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-lockup" href="/">
+        <svg width="20" height="20" viewBox="0 0 128 128" aria-hidden="true">
+          <mask id="brand-crescent">
+            <rect width="128" height="128" fill="white" />
+            <circle cx="96.9" cy="55.1" r="60" fill="black" />
+          </mask>
+          <circle cx="78.5" cy="63" r="60" fill="oklch(0.7 0.19 35)" mask="url(#brand-crescent)" />
+        </svg>
+        <h1>Advoid</h1>
+      </a>
+    </header>
+
+    <main class="policy">
+      <h2>Privacy Policy</h2>
+      <p class="updated">Last updated September 6, 2026</p>
+
+      <p>
+        Advoid does not collect, store, or transmit any personal data, browsing history, or
+        page content. It has no servers of its own to send anything to — everything it does
+        happens locally, inside your browser.
+      </p>
+
+      <h3>What Advoid does</h3>
+      <ul>
+        <li>
+          Blocks known ad and tracker requests using <code>declarativeNetRequest</code> rule
+          lists built from EasyList and EasyPrivacy. Rule matching happens entirely on your
+          device; the lists are bundled with the extension, not fetched from a live server.
+        </li>
+        <li>Hides ad elements on pages using a bundled list of cosmetic selectors.</li>
+        <li>
+          On YouTube, automatically skips or mutes ads it can't block outright, using page
+          content only in your own browser tab.
+        </li>
+      </ul>
+
+      <h3>What Advoid stores</h3>
+      <p>
+        Your on/off setting, your per-site whitelist, the YouTube toggle, and a local count of
+        blocked requests are saved using Chrome's <code>storage.local</code> API. This data
+        stays on your device. It is never synced to any Advoid server, because none exists, and
+        it is never sent anywhere else.
+      </p>
+
+      <h3>Why Advoid asks for broad permissions</h3>
+      <p>
+        Advoid requests permission to run on all websites (<code>&lt;all_urls&gt;</code>)
+        because ad and tracker blocking only works if it can apply on any site you visit — not
+        because it reads, collects, or transmits what's on those pages. The
+        <code>storage</code> permission is used solely for the local settings described above.
+      </p>
+
+      <h3>Third parties</h3>
+      <p>
+        Advoid does not use analytics, crash reporting, or advertising services of any kind, and
+        does not share data with any third party, because it collects none.
+      </p>
+
+      <h3>Changes to this policy</h3>
+      <p>
+        If this policy changes, the update will be posted on this page with a revised date
+        above.
+      </p>
+
+      <h3>Contact</h3>
+      <p>Questions about this policy: <a href="mailto:contact@advoid.me">contact@advoid.me</a></p>
+    </main>
+
+    <footer class="site-footer">
+      <a href="index.html">Home</a>
+    </footer>
+  </body>
+</html>
